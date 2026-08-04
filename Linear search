@@ -17,6 +17,7 @@ if result != -1:
     print("result")
 else:
     print("Element not found")'''
+#binarySearch
 def binary_search(arr, key):
     low = 0
     high = len(arr) - 1
@@ -32,17 +33,9 @@ def binary_search(arr, key):
             high = mid - 1
 
     return -1
-
-
-# Input array (must be sorted)
 arr = list(map(int, input("Enter sorted array elements: ").split()))
-
-# Input key
 key = int(input("Enter the element to search: "))
-
-# Search
 result = binary_search(arr, key)
-
 if result != -1:
     print("Element found at index", result)
 else:
